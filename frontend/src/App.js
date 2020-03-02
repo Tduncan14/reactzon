@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Header from './Components/Header';
+import Main from './Components/Main';
 
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
   return (
   <div className="grid-container">
   <Header />
+  <Main />
 
   </div>
 
