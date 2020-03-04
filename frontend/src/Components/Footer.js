@@ -8,15 +8,12 @@ class Footer extends Component {
   render(){
 
     return(
-        <footer class="footer">
+        <footer className="footer">
         All Rights reserved
      </footer>
     )
   }
 }
 
-
-
-export default Footer
 
 export default Footer;

@@ -1,22 +1,28 @@
-import React from 'react'
+import React,{Component} from 'react'
 
 
 
-const Header = () => {
+class Header extends Component {
+
+  constructor(props){
+      super(props)
+
+      this.state={
+          
+      }
+  }
 
 
-
-
-
+render(){
 
     return(
 
         <header  className="header">
         <div className="brand">
-            <button onClick="openMenu()">
+            <button onClick={this.props.openMenu}>
                 &#9776;
             </button>
-         <a href="index.html">Amazon</a>
+         <a href="index.html">Treekster</a>
         </div>
 
         <div className="header-links">
@@ -27,6 +33,8 @@ const Header = () => {
     </header>
 
     )
+
+}
 }
 
 

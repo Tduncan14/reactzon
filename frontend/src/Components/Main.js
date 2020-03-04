@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import image from '../images/d1.jpg';
-
+import data from '../data';
 class Main extends Component {
 
 
@@ -14,118 +14,34 @@ class Main extends Component {
 
         <div class="content">
             <ul class="products">
-                <li>
+
+                {data.products.map( (product) =>(
+                   <div>
+                        <li>
                    <div class="product">
-                       <img class="product-image" src={image} alt="product"/>
+                       <img class="product-image" src={product.image} alt="product"/>
                        <div class="product-name">
                           <a href="#">
-                            Slim shirt
+                           {product.name}
                           </a>
                        </div>
                        <div class="product-brand">
-                           nike
+                           {product.brand}
                        </div>
                        <div class="product-price">
-                           $80.99
+                           {product.price}
                        </div>
                        <div class="product-rating">
-                        4.5 starts(10 reviews)
+                       {product.rating} Stars {product.numReviews} reviews
                     </div>
                     </div>
                 </li>
-                <li>
-                   <div class="product">
-                       <img class="product-image" src={image} alt="product"/>
-                       <div class="product-name">
-                          <a href="#">
-                            Slim shirt
-                          </a>
-                       </div>
-                       <div class="product-brand">
-                           nike
-                       </div>
-                       <div class="product-price">
-                           $80.99
-                       </div>
-                       <div class="product-rating">
-                        4.5 starts(10 reviews)
-                    </div>
-                    </div>
-                </li> <li>
-                   <div class="product">
-                       <img class="product-image" src={image} alt="product"/>
-                       <div class="product-name">
-                          <a href="#">
-                            Slim shirt
-                          </a>
-                       </div>
-                       <div class="product-brand">
-                           nike
-                       </div>
-                       <div class="product-price">
-                           $80.99
-                       </div>
-                       <div class="product-rating">
-                        4.5 starts(10 reviews)
-                    </div>
-                    </div>
-                </li> <li>
-                   <div class="product">
-                       <img class="product-image" src={image} alt="product"/>
-                       <div class="product-name">
-                          <a href="#">
-                            Slim shirt
-                          </a>
-                       </div>
-                       <div class="product-brand">
-                           nike
-                       </div>
-                       <div class="product-price">
-                           $80.99
-                       </div>
-                       <div class="product-rating">
-                        4.5 starts(10 reviews)
-                    </div>
-                    </div>
-                </li> <li>
-                   <div class="product">
-                       <img class="product-image" src={image} alt="product"/>
-                       <div class="product-name">
-                          <a href="#">
-                            Slim shirt
-                          </a>
-                       </div>
-                       <div class="product-brand">
-                           nike
-                       </div>
-                       <div class="product-price">
-                           $80.99
-                       </div>
-                       <div class="product-rating">
-                        4.5 starts(10 reviews)
-                    </div>
-                    </div>
-                </li> <li>
-                   <div class="product">
-                       <img class="product-image" src={image} alt="product"/>
-                       <div class="product-name">
-                          <a href="#">
-                            Slim shirt
-                          </a>
-                       </div>
-                       <div class="product-brand">
-                           nike
-                       </div>
-                       <div class="product-price">
-                           $80.99
-                       </div>
-                       <div class="product-rating">
-                        4.5 starts(10 reviews)
-                    </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+                   </div>
+
+                ))}
+               
+                </ul>
+           </div>
         </main>
     )
   }
