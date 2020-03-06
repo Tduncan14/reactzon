@@ -4,6 +4,8 @@ import Main from './Components/Main';
 import Footer from './Components/Footer';
 import Aside from './Components/Aside';
 import {createStore} from 'redux'
+import {BrowserRouter as Router, Route,Link,Switch} from 'react-router-dom';
+import HomeScreen from './Components/HomeScreen';
 
 
 class App extends Component {
@@ -36,13 +38,16 @@ class App extends Component {
 
   render(){
   return (
+ <Router>
+  
   <div className="grid-container">
   <Header openMenu ={this.openMenu} />
   <Aside classChange={this.state.classChange} openMenu={this.openMenu} />
-  <Main />
+ <Main/>
   <Footer />
 
   </div>
+  </Router>
 
   
    

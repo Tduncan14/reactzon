@@ -4,6 +4,9 @@ import data from '../data';
 import{BrowserRouter as Router,Route,Link} from 'react-router-dom';
 import HomeScreen from './HomeScreen';
 import ProductScreen from './ProductScreen';
+import Header from './Header';
+import Footer from './Footer';
+import Aside from './Aside';
 
 class Main extends Component {
 
@@ -14,16 +17,9 @@ class Main extends Component {
 
 
     return(
-        <Router>
-        <main class="main">
-
-        <div class="content">
-            <Route exact true path ="/" component={HomeScreen} />
-            <Route exact true path ="/products/:id" component={ProductScreen}/>
-          
-           </div>
-        </main>
-        </Router>
+      <div className="grid-container">
+          <Route exact path to="/" component={HomeScreen} />
+      </div>
     )
   }
 }

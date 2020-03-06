@@ -1,4 +1,7 @@
-import React,{Component} from 'react'
+import React,{Component} from 'react';
+import {BrowserRouter as Router, Link,Switch,Route} from 'react-router-dom';
+import HomeScreen from './HomeScreen';
+import ProductScreen from './ProductScreen';
 
 
 
@@ -17,12 +20,13 @@ render(){
 
     return(
 
+   
         <header  className="header">
         <div className="brand">
             <button onClick={this.props.openMenu}>
                 &#9776;
             </button>
-         <a href="index.html">Treekster</a>
+         <Link to="/">Treekster</Link>
         </div>
 
         <div className="header-links">
@@ -30,7 +34,11 @@ render(){
             <a href="cart.html"> Cart</a>
 
         </div>
+
     </header>
+  
+
+    
 
     )
 
