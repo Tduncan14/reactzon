@@ -7,6 +7,7 @@ const data = {
        price:60,
        brand:'Nike',
        rating: 4.5,
+       id:1,
        numReviews:10
    },
    {
@@ -15,7 +16,8 @@ const data = {
     price:60,
     brand:'Nike',
     rating: 4.5,
-    numReviews:10
+    numReviews:10,
+    id:2
 },
 {
     name:'Slim Shirt',
@@ -23,7 +25,8 @@ const data = {
     price:60,
     brand:'Nike',
     rating: 4.5,
-    numReviews:10
+    numReviews:10,
+    id:3
 },
 {
     name:'Slim Shirt',
@@ -31,7 +34,8 @@ const data = {
     price:60,
     brand:'Nike',
     rating: 4.5,
-    numReviews:10
+    numReviews:10,
+    id:4
 },
 {
     name:'Slim Shirt',
@@ -39,7 +43,9 @@ const data = {
     price:60,
     brand:'Nike',
     rating: 4.5,
+    id:5,
     numReviews:10
+
 },
 {
     name:'Slim Shirt',
@@ -47,8 +53,10 @@ const data = {
     price:60,
     brand:'Nike',
     rating: 4.5,
-    numReviews:10
+    numReviews:10,
+    id:6
 },
+
 ]
 
 

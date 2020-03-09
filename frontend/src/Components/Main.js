@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import image from '../images/d1.jpg';
 import data from '../data';
-import{BrowserRouter as Router,Route,Link} from 'react-router-dom';
+import{BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom';
 import HomeScreen from './HomeScreen';
 import ProductScreen from './ProductScreen';
 import Header from './Header';
@@ -17,9 +17,12 @@ class Main extends Component {
 
 
     return(
+  
       <div className="grid-container">
           <Route exact path to="/" component={HomeScreen} />
+          
       </div>
+   
     )
   }
 }

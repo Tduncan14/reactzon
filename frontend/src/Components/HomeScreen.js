@@ -1,11 +1,15 @@
 import React from 'react';
 import data from '../data';
+import {Link,Route} from 'react-router-dom';
+import ProductScreen from './ProductScreen';
 
 
 function HomeScreen( props){
 
 
   return(
+    <>
+    
     <ul class="products">
 
     {data.products.map( (product) =>(
@@ -14,9 +18,9 @@ function HomeScreen( props){
        <div class="product">
            <img class="product-image" src={product.image} alt="product"/>
            <div class="product-name">
-              <a href="#">
+              <Link to ={'/products/'+product.id}>
                {product.name}
-              </a>
+              </Link>
            </div>
            <div class="product-brand">
                {product.brand}
@@ -33,9 +37,10 @@ function HomeScreen( props){
 
     ))}
    
+  
     </ul>
 
-
+</>
 
   )
 
