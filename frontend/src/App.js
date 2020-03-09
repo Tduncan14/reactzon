@@ -48,7 +48,7 @@ class App extends Component {
   <Route path="/" exact={true} component={HomeScreen} /> 
   <Route path="/products" component={ProductsScreen} />
   <Route path="/products/:id" component={ProductScreen} /> 
-  f
+ 
   <Footer />
 
   </div>
